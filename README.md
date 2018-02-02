@@ -4,3 +4,5 @@ Insert data into mysql database with Laravel
 Larvel version: 5.5
 
 Database has been included under migrations.
+
+Please navigate to "/students" route
