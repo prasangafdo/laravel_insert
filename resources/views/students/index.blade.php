@@ -1,6 +1,6 @@
 {{"This is student's index"}}
 
-<form method="post" action="upload" enctype="multipart/form-data">
+<form method="post" action="students" enctype="multipart/form-data">
 Name:<br/>
 <input type="text" name="name"/><br/>
 User Address:<br/>
