@@ -16,4 +16,6 @@ Route::get('/', function () {
 });
 //Route::get('/students', StudentController) ;
 
-Route::get('/students', 'StudentController@index' );
+Route::get('students', 'StudentController@index' );
+
+Route::post('students', 'StudentController@store' );//Save the data to the database

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Student;
 use Illuminate\Http\Request;
+use DB; //Insert this to use the database
 
 class StudentController extends Controller
 {
@@ -37,6 +38,16 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         //
+        $name = $request->input('name');
+        $user_address = $request->input('user_address');
+        $grade = $request->input('grade');
+
+        $data = array('name'=>$name, 'user_address'=>$user_address, 'grade'=>$grade);//Inserting data to an array
+
+        DB::table('students')->insert($data);
+
+		echo "Success";
+        
     }
 
     /**
